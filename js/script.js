@@ -1,8 +1,8 @@
 var argButtonName, buttonRock, buttonScissors, buttonPaper;
 
-buttonRock = document.getElementById('kamień');
-buttonScissors = document.getElementById('nożyce')
-buttonPaper = document.getElementById('papier');
+buttonRock = document.getElementById('button-rock');
+buttonScissors = document.getElementById('button-scissors')
+buttonPaper = document.getElementById('button-paper');
 
 function buttonClicked(argButtonName) {
     clearMessages();
