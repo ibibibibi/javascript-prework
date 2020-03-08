@@ -1,9 +1,3 @@
-var argButtonName, buttonRock, buttonScissors, buttonPaper;
-
-buttonRock = document.getElementById('button-rock');
-buttonScissors = document.getElementById('button-scissors')
-buttonPaper = document.getElementById('button-paper');
-
 function buttonClicked(argButtonName) {
     clearMessages();
     console.log(argButtonName + ' został kliknięty');
@@ -45,6 +39,9 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
+const buttonRock = document.getElementById('button-rock'),
+buttonScissors = document.getElementById('button-scissors'),  
+buttonPaper = document.getElementById('button-paper');
 
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
